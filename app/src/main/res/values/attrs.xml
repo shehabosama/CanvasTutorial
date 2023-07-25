@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SegmentedProgressBar">
+        <attr name="dividerColor" format="color" />
+        <attr name="progressBarBackgroundColor" format="color" />
+        <attr name="progressBarColor" format="color" />
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="isDividerEnabled" format="boolean" />
+        <attr name="divisions" format="integer" />
+        <attr name="cornerRadius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="SignalStrengthView">
+        <attr name="segmentColor_1" format="color"/>
+        <attr name="segmentColor_2" format="color"/>
+        <attr name="segmentColor_3" format="color"/>
+        <attr name="segmentCount" format="integer" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Hello World!"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--   -->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+      >
+
+        <!--        <RadioGroup-->
+        <!--            android:id="@+id/toggle_indoor_outdoor"-->
+        <!--            android:layout_width="150dp"-->
+        <!--            android:layout_height="40dp"-->
+        <!--            android:background="@drawable/toggle_btn_yes_bg"-->
+        <!--            android:gravity="center"-->
+        <!--            android:orientation="horizontal"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent">-->
+
+        <!--            <RadioButton-->
+        <!--                android:id="@+id/radioOne"-->
+        <!--                android:layout_width="75dp"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:background="@drawable/two_btn_selector"-->
+        <!--                android:button="@null"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="in door"-->
+        <!--                android:textColor="@drawable/toggle_selector"-->
+        <!--                android:visibility="visible" />-->
+
+        <!--            <RadioButton-->
+        <!--                android:id="@+id/radioTwo"-->
+        <!--                android:layout_width="75dp"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:background="@drawable/two_btn_selector"-->
+        <!--                android:button="@null"-->
+        <!--                android:checked="true"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="out door"-->
+        <!--                android:textColor="@drawable/toggle_selector"-->
+        <!--                android:visibility="visible" />-->
+        <!--        </RadioGroup>-->
+
+
+<!--        <com.base.canvastutorial.ArcsView2-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent" />-->
+
+<!--        <ProgressBar-->
+<!--            android:id="@+id/horizontal_progress_bar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            style="?android:attr/progressBarStyleHorizontal"-->
+<!--            android:max="100"-->
+<!--            android:progress="10"-->
+<!--            android:layout_marginLeft="16dp"-->
+<!--            android:layout_marginRight="16dp"-->
+<!--            />-->
+        <com.base.canvastutorial.SegmentedProgressBar
+            android:id="@+id/segmented_pb_1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:layout_centerInParent="true"
+            app:cornerRadius="20dp"
+            app:dividerColor="@color/white"
+            app:dividerWidth="2dp"
+            app:divisions="10"
+            app:isDividerEnabled="true"
+            app:progressBarBackgroundColor="#dadada"
+            app:progressBarColor="#ff2d2d" />
+        <ProgressBar
+            android:id="@+id/progress_slots"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleHorizontal"/>
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="2dp"-->
+<!--            android:background="@color/black"/>-->
+<!--        <com.base.canvastutorial.SignalStrengthView-->
+<!--            android:id="@+id/signal_strength_view"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="200dp"-->
+<!--            app:segmentCount="3"-->
+<!--            app:segmentColor_2="@color/white"-->
+<!--            app:segmentColor_1 ="@color/black"-->
+<!--            app:segmentColor_3="@color/red"-->
+<!--            android:clipOrientation="horizontal"-->
+<!--            android:indeterminateDrawable="@drawable/progress"-->
+<!--            />-->
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
